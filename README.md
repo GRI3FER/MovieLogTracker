@@ -30,6 +30,9 @@ media_type is just between movies, cartoons, anime and tv shows
 To run the app just download the files on the Github and do python app.py and it should open on http://localhost:5000/
 
 To Create an entry click add entry on the top right, the status will be auto selected depending on which tab out of Watched, Watching or Want to Watch it's in
+
 To Read click whichever tab and all the entries are displayed
+
 To Update click the edit button on whichever movie box you want to change
+
 To Delete click the delete button on whichever movie box you want to delete
