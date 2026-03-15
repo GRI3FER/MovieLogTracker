@@ -489,7 +489,10 @@ function renderQueued(movies) {
         ${m.notes ? `<div class="card-notes">${esc(m.notes)}</div>` : ''}
       </div>
       <div class="card-actions">
-        <button class="btn btn-watched btn-sm" onclick="markStatus(${m.id},'watching')">Watching</button>
+        ${activeTab === 'watching'
+          ? `<button class="btn btn-watched btn-sm" onclick="markStatus(${m.id},'watched')">Watched</button>`
+          : `<button class="btn btn-watched btn-sm" onclick="markStatus(${m.id},'watching')">Watching</button>`
+        }
         <button class="btn btn-ghost btn-sm"   onclick="openEdit(${m.id})">Edit</button>
         <button class="btn btn-danger btn-sm"  onclick="confirmDelete(${m.id},'${esc(m.title)}')">Delete</button>
       </div>
