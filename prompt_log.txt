@@ -1,0 +1,43 @@
+I used Claude to code the whole project, here is the link to the chats: https://claude.ai/share/b13f5791-18fb-445b-a126-9c346eb0e5af
+
+I started off with using ChatGPT to help brainstorm which project I want to do then I pasted the formatting from my discussion with ChatGPT to Claude
+I then realized I could integrate an API to make adding entries easier so I used Claude to help set that up with TMDB and then realized, that
+I could also add tabs for Want to Watch and Watching so it's easier to track everything in one spot. Then I just refine the color scheme and went for
+this old theatre aesethetic with the velvet curtains. 
+
+
+Here are some important prompts:
+
+1) 
+
+3. Movie/TV Show Diary
+* What to track: Movies or series you watch.
+* Columns:
+   * `id`
+   * `title`
+   * `platform` (Netflix, YouTube, theaters)
+   * `genre`
+   * `rating` (INTEGER 1–5)
+   * `date_watched`
+   * `notes`
+* Fun CRUD feature: Filter by genre, sort by rating, update rating after rewatching.
+
+Help me create this in SQLite
+
+2) Can you autofill the genre using an easily integratable public API
+
+3) Make the website team closer to the classic theatre curtains shade and vibe and rechoose fonts accordinglt
+
+4) Make two tabs one for watched and for yet to watch and make it so the yet to watch tab is basically the same, but doesn't have rating yet, 
+but allows me to rank them in order of what I want to watch
+
+5) Make so top right of every tab displays the poster image from the API for the respective movie/show
+
+6) For want to watch make only thing to sort by is Genres and rank which I would align relatively by being able to drag boxes in an order
+
+7) Now add a tab for watching that is the exact same as Want to Watch is now
+
+Make the Watched button in Want to Watch a button that says Watching
+
+Make the Want to Watch button in Watched say Watching
+
